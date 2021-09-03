@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeIssue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangulo"
+        android:clickable="true"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/lblVol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblAutor"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="47dp"
+            android:layout_marginRight="47dp"
+            android:layout_toStartOf="@+id/lblNumero"
+            android:layout_toLeftOf="@+id/lblNumero"
+            android:layout_toEndOf="@+id/lblYear"
+            android:layout_toRightOf="@+id/lblYear"
+            android:text="Vol" />
+
+        <TextView
+            android:id="@+id/lblNumero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblAutor"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Numero" />
+
+        <ImageView
+            android:id="@+id/picCover"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/lblAutor"
+            android:layout_width="281dp"
+            android:layout_height="36dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toEndOf="@+id/picCover"
+            android:layout_toRightOf="@+id/picCover"
+            android:text="Revista de ciencias sociales"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/lblYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblAutor"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/picCover"
+            android:text="Year"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+    </RelativeLayout>
+</LinearLayout>
